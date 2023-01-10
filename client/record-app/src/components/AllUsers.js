@@ -14,7 +14,8 @@ function AllUsers() {
     <div>
       <h2>Get all users</h2>
 
-      {users.length > 0 && users.map((user) => <img src={user.userPic} />)}
+      {users.length > 0 &&
+        users.map((user) => <img alt="users img" src={user.userPic} />)}
       <button onClick={getAllUsers}>Get all users</button>
     </div>
   );
